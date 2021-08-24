@@ -1,3 +1,4 @@
+import $ from 'jquery'
 let showPs = true
 
 $('document').ready(function(){
