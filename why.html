@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome | StockViewer</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyDUPMEuxuaWidzLaEc0HxqQi05K1qOX824",
+            authDomain: "stockviewer-2dd5f.firebaseapp.com",
+            databaseURL: "https://stockviewer-2dd5f-default-rtdb.firebaseio.com",
+            projectId: "stockviewer-2dd5f",
+            storageBucket: "stockviewer-2dd5f.appspot.com",
+            messagingSenderId: "762217244773",
+            appId: "1:762217244773:web:25d3d344d296ae365d7e8c"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+</head>
+
+<body style="background-color: black">
+    <style>
+        h1 {
+            text-align: center;
+            color: cyan;
+            font-weight: bold;
+            font-size: 50px;
+        }
+
+        p {
+            color: yellow;
+        }
+
+        .welcome_page {
+            color: lightgreen;
+            text-align: center;
+        }
+
+        .inputTags {
+            background-color: black;
+            color: orange;
+            height: 30px;
+            font-size: 15px;
+            margin-top: 10px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            width: 200px
+        }
+
+        .sign {
+            margin-top: 20px;
+            color: white;
+            background-color: black;
+            width: 100px;
+            border-top: none;
+            border-left: none;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1 id="welcome">Welcome to StockViewer</h1>
+
+    <code>
+      <p style="text-align: center;">Made By Anirudh Iyer</p>
+      <p style="text-align: center;">21/06/2021</p>
+      <p id="welcome_page" style="color: lightgreen; text-align: center; font-size: 15px;"></p>
+    </code>
+
+    <div style="display: flex; justify-content: center;">
+        <input placeholder="Enter username" type="text" class="inputTags" id="username" />
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+        <input placeholder="Enter email id" type="email" class="inputTags" id="email" />
+    </div>
+
+    <div style="display: flex; justify-content: center">
+        <input placeholder="Password" type="password" class="inputTags" id="password" />
+    </div>
+
+    <div id="divLogIn" style="display: flex; justify-content: center">
+        <button id="logIn" class="sign">Login</button>
+    </div>
+
+    <div id="divSignOut" style="display: flex; justify-content: center">
+        <button id="signUp" class="sign">Sign Up</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
