@@ -1,4 +1,4 @@
-import $ from 'jquery'
+import $ from './node_modules/jquery/dist/jquery'
 let showPs = true
 
 $('document').ready(function(){
